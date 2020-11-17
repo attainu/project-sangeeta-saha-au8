@@ -122,7 +122,10 @@ class ParkingLot:
                     op = op + str(i + 1)
                 else:
                     op = op + " ," + str(i + 1)
-        print("Empty slots in the parking lot are ", op)
+        if len(op) == 0:
+            print("No empty slots")
+        else:
+            print("Empty slots in the parking lot are ", op)
 
 
 def convert(seconds):
